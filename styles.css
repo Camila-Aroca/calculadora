@@ -7,20 +7,21 @@ body {
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
-   }
-   
-   
-   .calculator {
+ }
+ 
+ 
+ .calculator {
     padding: 20px;
     -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-    border-radius: 1px;
-   }
-   
-   
-   .input {
+    border-radius: 10px; /* Aumentar el radio para bordes más redondeados */
+    background-color: #f0f0f0; /* Fondo más claro */
+ }
+ 
+ 
+ .input {
     border: 1px solid #ddd;
-    border-radius: 1px;
+    border-radius: 10px; /* Bordes redondeados */
     height: 60px;
     padding-right: 15px;
     padding-top: 10px;
@@ -29,106 +30,110 @@ body {
     font-size: 2.5rem;
     overflow-x: auto;
     transition: all .2s ease-in-out;
-   }
-   
-   
-   .input:hover {
+ }
+ 
+ 
+ .input:hover {
     border: 1px solid #bbb;
     -webkit-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
     box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-   }
-   
-   
-   .buttons {}
-   
-   
-   .operators {}
-   
-   
-   .operators div {
+ }
+ 
+ 
+ .buttons {}
+ 
+ 
+ .operators {
+    display: flex; /* Cambiar a flex para mejor alineación */
+    flex-wrap: wrap; /* Permitir que se envuelvan */
+ }
+ 
+ 
+ .operators div {
     display: inline-block;
     border: 1px solid #bbb;
-    border-radius: 1px;
+    border-radius: 10px; /* Bordes redondeados */
     width: 80px;
     text-align: center;
     padding: 10px;
     margin: 20px 4px 10px 0;
     cursor: pointer;
-    background-color: #ddd;
+    background-color: #4CAF50; /* Color verde */
+    color: white; /* Color del texto */
     transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
-   }
-   
-   
-   .operators div:hover {
-    background-color: #ddd;
-    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+ }
+ 
+ 
+ .operators div:hover {
+    background-color: #fc7329; /* Color más oscuro al pasar el mouse */
+    -webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     border-color: #aaa;
-   }
-   
-   
-   .operators div:active {
+ }
+ 
+ 
+ .operators div:active {
     font-weight: bold;
-   }
-   
-   
-   .leftPanel {
+ }
+ 
+ 
+ .leftPanel {
     display: inline-block;
-   }
-   
-   
-   .numbers div {
+ }
+ 
+ 
+ .numbers div {
     display: inline-block;
     border: 1px solid #ddd;
-    border-radius: 1px;
+    border-radius: 10px; /* Bordes redondeados */
     width: 80px;
     text-align: center;
     padding: 10px;
     margin: 10px 4px 10px 0;
     cursor: pointer;
-    background-color: #f9f9f9;
+    background-color: #f9f9f9; /* Color de fondo claro */
     transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
-   }
-   
-   
-   .numbers div:hover {
-    background-color: #f1f1f1;
-    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+ }
+ 
+ 
+ .numbers div:hover {
+    background-color: #f1f1f1; /* Color al pasar el mouse */
+    -webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     border-color: #bbb;
-   }
-   
-   
-   .numbers div:active {
+ }
+ 
+ 
+ .numbers div:active {
     font-weight: bold;
-   }
-   
-   
-   div.equal {
+ }
+ 
+ 
+ div.equal {
     display: inline-block;
     border: 1px solid #3079ED;
-    border-radius: 1px;
-    width: 17%;
+    border-radius: 10px; /* Bordes redondeados */
+    width: 80px; /* Asegúrate que todos los botones tengan el mismo ancho */
     text-align: center;
-    padding: 127px 10px;
+    padding: 15px; /* Aumentar padding para un tamaño de botón más adecuado */
     margin: 10px 6px 10px 0;
     vertical-align: top;
     cursor: pointer;
     color: #FFF;
-    background-color: #4d90fe;
+    background-color: #4d90fe; /* Color azul */
     transition: all .2s ease-in-out;
-   }
-   
-   
-   div.equal:hover {
-    background-color: #307CF9;
-    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+ }
+ 
+ 
+ div.equal:hover {
+    background-color: #307CF9; /* Color más oscuro al pasar el mouse */
+    -webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     border-color: #1857BB;
-   }
-   
-   
-   div.equal:active {
+ }
+ 
+ 
+ div.equal:active {
     font-weight: bold;
-   }
-   
+ }
+ 
