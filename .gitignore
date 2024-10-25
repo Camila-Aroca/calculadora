@@ -1,15 +1,1 @@
-# Archivos de sistema
-.DS_Store
-Thumbs.db
-
-# Dependencias
-node_modules/
-vendor/
-
-# Archivos de entorno
-.env
-
-# Configuración de editores
-.vscode/
-.idea/
 
